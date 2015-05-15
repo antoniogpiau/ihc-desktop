@@ -45,6 +45,11 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jToggleButton1.setText("Entrar");
         jToggleButton1.setName("btn_entrar"); // NOI18N
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         jTextField1.setName("tf_usuario"); // NOI18N
 
@@ -103,6 +108,11 @@ public class TelaLogin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        //if ((tf_usuario.text == "ADMIN")&&(pf_senha.text =="admin123")){
+        //}
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
      * @param args the command line arguments
