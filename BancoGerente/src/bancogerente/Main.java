@@ -5,12 +5,13 @@
  */
 package bancogerente;
 
-public class BancoGerente {
+public class Main {
 
     public static void main(String[] args) {
         
-        
-        
+        TelaLogin anyFrame = new TelaLogin();
+        anyFrame.show();
+                
     }
     
 }
