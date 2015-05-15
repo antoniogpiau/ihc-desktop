@@ -27,61 +27,71 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jToggleButton1 = new javax.swing.JToggleButton();
+        btn_abrirConta = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton4 = new javax.swing.JToggleButton();
-        jToggleButton5 = new javax.swing.JToggleButton();
-        jToggleButton6 = new javax.swing.JToggleButton();
-        jToggleButton7 = new javax.swing.JToggleButton();
-        jToggleButton8 = new javax.swing.JToggleButton();
-        jToggleButton9 = new javax.swing.JToggleButton();
-        jToggleButton10 = new javax.swing.JToggleButton();
-        jToggleButton11 = new javax.swing.JToggleButton();
+        btn_investimentos = new javax.swing.JToggleButton();
+        btn_movimentacoes = new javax.swing.JToggleButton();
+        btn_consultarInfoCliente = new javax.swing.JToggleButton();
+        btn_emprestimos = new javax.swing.JToggleButton();
+        btn_gerarCartao = new javax.swing.JToggleButton();
+        btn_cancelarCartao = new javax.swing.JToggleButton();
+        btn_transacoesGrandes = new javax.swing.JToggleButton();
+        btn_estorno = new javax.swing.JToggleButton();
+        btn_financiamento = new javax.swing.JToggleButton();
+        btn_consorcio = new javax.swing.JToggleButton();
+        btn_sair = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jToggleButton1.setText("Abrir Conta");
-        jToggleButton1.setName("btn_abrirConta"); // NOI18N
+        btn_abrirConta.setText("Abrir Conta");
+        btn_abrirConta.setName("btn_abrirConta"); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Operações");
 
-        jToggleButton2.setText("Acompanhamento de Investimentos");
-        jToggleButton2.setName("btn_investimentos"); // NOI18N
+        btn_investimentos.setText("Acompanhamento de Investimentos");
+        btn_investimentos.setName("btn_investimentos"); // NOI18N
 
-        jToggleButton3.setLabel("Movimentações Bancárias");
-        jToggleButton3.setName("btn_movimentacoes"); // NOI18N
+        btn_movimentacoes.setLabel("Movimentações Bancárias");
+        btn_movimentacoes.setName("btn_movimentacoes"); // NOI18N
 
-        jToggleButton4.setText("Consultar Informações de Clientes");
-        jToggleButton4.setName("btn_consultaInfo"); // NOI18N
+        btn_consultarInfoCliente.setText("Consultar Informações de Clientes");
+        btn_consultarInfoCliente.setName("btn_consultaInfo"); // NOI18N
 
-        jToggleButton5.setText("Efetuar Empréstimos");
-        jToggleButton5.setName("btn_emprestimo"); // NOI18N
+        btn_emprestimos.setText("Efetuar Empréstimos");
+        btn_emprestimos.setName("btn_emprestimo"); // NOI18N
 
-        jToggleButton6.setText("Gerar Cartão de Crédito");
-        jToggleButton6.setName("btn_gerarCartao"); // NOI18N
-        jToggleButton6.addActionListener(new java.awt.event.ActionListener() {
+        btn_gerarCartao.setText("Gerar Cartão de Crédito");
+        btn_gerarCartao.setName("btn_gerarCartao"); // NOI18N
+        btn_gerarCartao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton6ActionPerformed(evt);
+                btn_gerarCartaoActionPerformed(evt);
             }
         });
 
-        jToggleButton7.setText("Cancelar Cartão de Crédito");
-        jToggleButton7.setName("btn_cancelarCartao"); // NOI18N
+        btn_cancelarCartao.setText("Cancelar Cartão de Crédito");
+        btn_cancelarCartao.setName("btn_cancelarCartao"); // NOI18N
 
-        jToggleButton8.setText("Transações de Grandes Valores");
-        jToggleButton8.setName("btn_transacoesGrande"); // NOI18N
+        btn_transacoesGrandes.setText("Transações de Grandes Valores");
+        btn_transacoesGrandes.setName("btn_transacoesGrande"); // NOI18N
 
-        jToggleButton9.setText("Realizar Estornos");
-        jToggleButton9.setName("btn_estornos"); // NOI18N
+        btn_estorno.setText("Realizar Estornos");
+        btn_estorno.setName("btn_estornos"); // NOI18N
 
-        jToggleButton10.setLabel("Financiamento");
-        jToggleButton10.setName("btn_financiamento"); // NOI18N
+        btn_financiamento.setLabel("Financiamento");
+        btn_financiamento.setName("btn_financiamento"); // NOI18N
 
-        jToggleButton11.setLabel("Consórcio");
-        jToggleButton11.setName("btn_consorcio"); // NOI18N
+        btn_consorcio.setLabel("Consórcio");
+        btn_consorcio.setName("btn_consorcio"); // NOI18N
+
+        btn_sair.setActionCommand("Sair");
+        btn_sair.setLabel("Sair");
+        btn_sair.setName("btn_sair"); // NOI18N
+        btn_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_sairActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -89,6 +99,9 @@ public class Menu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btn_sair))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(220, 220, 220)
                         .addComponent(jLabel1)
@@ -97,29 +110,29 @@ public class Menu extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jToggleButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
-                                .addComponent(jToggleButton8))
+                                .addComponent(btn_investimentos)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
+                                .addComponent(btn_transacoesGrandes))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jToggleButton1)
+                                .addComponent(btn_abrirConta)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton7))
+                                .addComponent(btn_cancelarCartao))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jToggleButton3)
+                                .addComponent(btn_movimentacoes)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton9))
+                                .addComponent(btn_estorno))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jToggleButton4)
+                                .addComponent(btn_consultarInfoCliente)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton10))
+                                .addComponent(btn_financiamento))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jToggleButton6)
+                                .addComponent(btn_gerarCartao)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jToggleButton5)
+                                .addComponent(btn_emprestimos)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton11)))))
-                .addGap(55, 55, 55))
+                                .addComponent(btn_consorcio)))))
+                .addGap(45, 45, 45))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,35 +141,43 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton1)
-                    .addComponent(jToggleButton7))
+                    .addComponent(btn_abrirConta)
+                    .addComponent(btn_cancelarCartao))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton2)
-                    .addComponent(jToggleButton8))
+                    .addComponent(btn_investimentos)
+                    .addComponent(btn_transacoesGrandes))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton3)
-                    .addComponent(jToggleButton9))
+                    .addComponent(btn_movimentacoes)
+                    .addComponent(btn_estorno))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButton10))
+                    .addComponent(btn_consultarInfoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_financiamento))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButton11))
+                    .addComponent(btn_emprestimos, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_consorcio))
                 .addGap(28, 28, 28)
-                .addComponent(jToggleButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addComponent(btn_gerarCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addComponent(btn_sair)
+                .addGap(40, 40, 40))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jToggleButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton6ActionPerformed
+    private void btn_gerarCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gerarCartaoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton6ActionPerformed
+    }//GEN-LAST:event_btn_gerarCartaoActionPerformed
+
+    private void btn_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sairActionPerformed
+       this.setVisible(false);
+       TelaLogin login = new TelaLogin();
+       login.show();
+    }//GEN-LAST:event_btn_sairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -194,17 +215,18 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton btn_abrirConta;
+    private javax.swing.JToggleButton btn_cancelarCartao;
+    private javax.swing.JToggleButton btn_consorcio;
+    private javax.swing.JToggleButton btn_consultarInfoCliente;
+    private javax.swing.JToggleButton btn_emprestimos;
+    private javax.swing.JToggleButton btn_estorno;
+    private javax.swing.JToggleButton btn_financiamento;
+    private javax.swing.JToggleButton btn_gerarCartao;
+    private javax.swing.JToggleButton btn_investimentos;
+    private javax.swing.JToggleButton btn_movimentacoes;
+    private javax.swing.JToggleButton btn_sair;
+    private javax.swing.JToggleButton btn_transacoesGrandes;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton10;
-    private javax.swing.JToggleButton jToggleButton11;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
-    private javax.swing.JToggleButton jToggleButton5;
-    private javax.swing.JToggleButton jToggleButton6;
-    private javax.swing.JToggleButton jToggleButton7;
-    private javax.swing.JToggleButton jToggleButton8;
-    private javax.swing.JToggleButton jToggleButton9;
     // End of variables declaration//GEN-END:variables
 }
