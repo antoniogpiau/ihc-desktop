@@ -34,6 +34,8 @@
                 <Property name="text" type="java.lang.String" value="Efetuar Empr&#xe9;stimos"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
+            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btn_gerarCartao">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Gerar Cart&#xe3;o de Cr&#xe9;dito"/>
@@ -43,6 +45,8 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Cancelar Cart&#xe3;o de Cr&#xe9;dito"/>
               </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btn_transacoesGrandes">
               <Properties>

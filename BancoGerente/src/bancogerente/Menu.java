@@ -34,8 +34,10 @@ public class Menu extends javax.swing.JFrame {
         btn_movimentacoes = new javax.swing.JMenuItem();
         btn_consultarInfoCliente = new javax.swing.JMenuItem();
         btn_emprestimos = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
         btn_gerarCartao = new javax.swing.JMenuItem();
         btn_cancelarCartao = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
         btn_transacoesGrandes = new javax.swing.JMenuItem();
         btn_estorno = new javax.swing.JMenuItem();
         btn_financiamento = new javax.swing.JMenuItem();
@@ -62,12 +64,14 @@ public class Menu extends javax.swing.JFrame {
 
         btn_emprestimos.setText("Efetuar Empréstimos");
         jMenu1.add(btn_emprestimos);
+        jMenu1.add(jSeparator1);
 
         btn_gerarCartao.setText("Gerar Cartão de Crédito");
         jMenu1.add(btn_gerarCartao);
 
         btn_cancelarCartao.setText("Cancelar Cartão de Crédito");
         jMenu1.add(btn_cancelarCartao);
+        jMenu1.add(jSeparator2);
 
         btn_transacoesGrandes.setText("Transações de Grandes Valores");
         jMenu1.add(btn_transacoesGrandes);
@@ -181,5 +185,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }
