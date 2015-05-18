@@ -27,157 +27,107 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btn_abrirConta = new javax.swing.JToggleButton();
-        jLabel1 = new javax.swing.JLabel();
-        btn_investimentos = new javax.swing.JToggleButton();
-        btn_movimentacoes = new javax.swing.JToggleButton();
-        btn_consultarInfoCliente = new javax.swing.JToggleButton();
-        btn_emprestimos = new javax.swing.JToggleButton();
-        btn_gerarCartao = new javax.swing.JToggleButton();
-        btn_cancelarCartao = new javax.swing.JToggleButton();
-        btn_transacoesGrandes = new javax.swing.JToggleButton();
-        btn_estorno = new javax.swing.JToggleButton();
-        btn_financiamento = new javax.swing.JToggleButton();
-        btn_consorcio = new javax.swing.JToggleButton();
-        btn_sair = new javax.swing.JToggleButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        btn_abrirConta = new javax.swing.JMenuItem();
+        btn_investimentos = new javax.swing.JMenuItem();
+        btn_movimentacoes = new javax.swing.JMenuItem();
+        btn_consultarInfoCliente = new javax.swing.JMenuItem();
+        btn_emprestimos = new javax.swing.JMenuItem();
+        btn_gerarCartao = new javax.swing.JMenuItem();
+        btn_cancelarCartao = new javax.swing.JMenuItem();
+        btn_transacoesGrandes = new javax.swing.JMenuItem();
+        btn_estorno = new javax.swing.JMenuItem();
+        btn_financiamento = new javax.swing.JMenuItem();
+        btn_consorcio = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        btn_sobre = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMenu1.setText("Capital Bank");
+
         btn_abrirConta.setText("Abrir Conta");
-        btn_abrirConta.setName("btn_abrirConta"); // NOI18N
+        jMenu1.add(btn_abrirConta);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("Operações");
+        btn_investimentos.setText("Acompanhar Ivestimentos");
+        jMenu1.add(btn_investimentos);
 
-        btn_investimentos.setText("Acompanhamento de Investimentos");
-        btn_investimentos.setName("btn_investimentos"); // NOI18N
-
-        btn_movimentacoes.setLabel("Movimentações Bancárias");
-        btn_movimentacoes.setName("btn_movimentacoes"); // NOI18N
+        btn_movimentacoes.setText("Movimentações Bancárias");
+        jMenu1.add(btn_movimentacoes);
 
         btn_consultarInfoCliente.setText("Consultar Informações de Clientes");
-        btn_consultarInfoCliente.setName("btn_consultaInfo"); // NOI18N
+        jMenu1.add(btn_consultarInfoCliente);
 
         btn_emprestimos.setText("Efetuar Empréstimos");
-        btn_emprestimos.setName("btn_emprestimo"); // NOI18N
+        jMenu1.add(btn_emprestimos);
 
         btn_gerarCartao.setText("Gerar Cartão de Crédito");
-        btn_gerarCartao.setName("btn_gerarCartao"); // NOI18N
-        btn_gerarCartao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_gerarCartaoActionPerformed(evt);
-            }
-        });
+        jMenu1.add(btn_gerarCartao);
 
         btn_cancelarCartao.setText("Cancelar Cartão de Crédito");
-        btn_cancelarCartao.setName("btn_cancelarCartao"); // NOI18N
+        jMenu1.add(btn_cancelarCartao);
 
         btn_transacoesGrandes.setText("Transações de Grandes Valores");
-        btn_transacoesGrandes.setName("btn_transacoesGrande"); // NOI18N
+        jMenu1.add(btn_transacoesGrandes);
 
         btn_estorno.setText("Realizar Estornos");
-        btn_estorno.setName("btn_estornos"); // NOI18N
+        jMenu1.add(btn_estorno);
 
-        btn_financiamento.setLabel("Financiamento");
-        btn_financiamento.setName("btn_financiamento"); // NOI18N
+        btn_financiamento.setText("Financiamento");
+        jMenu1.add(btn_financiamento);
 
-        btn_consorcio.setLabel("Consórcio");
-        btn_consorcio.setName("btn_consorcio"); // NOI18N
-
-        btn_sair.setActionCommand("Sair");
-        btn_sair.setLabel("Sair");
-        btn_sair.setName("btn_sair"); // NOI18N
-        btn_sair.addActionListener(new java.awt.event.ActionListener() {
+        btn_consorcio.setText("Consórcio");
+        btn_consorcio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_sairActionPerformed(evt);
+                btn_consorcioActionPerformed(evt);
             }
         });
+        jMenu1.add(btn_consorcio);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Ajuda");
+
+        btn_sobre.setText("Sobre");
+        jMenu2.add(btn_sobre);
+
+        jMenuItem1.setText("Sair");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btn_sair))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(220, 220, 220)
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_investimentos)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
-                                .addComponent(btn_transacoesGrandes))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_abrirConta)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_cancelarCartao))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btn_movimentacoes)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_estorno))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_consultarInfoCliente)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_financiamento))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_gerarCartao)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_emprestimos)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_consorcio)))))
-                .addGap(45, 45, 45))
+            .addGap(0, 658, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel1)
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_abrirConta)
-                    .addComponent(btn_cancelarCartao))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_investimentos)
-                    .addComponent(btn_transacoesGrandes))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_movimentacoes)
-                    .addComponent(btn_estorno))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_consultarInfoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_financiamento))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_emprestimos, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_consorcio))
-                .addGap(28, 28, 28)
-                .addComponent(btn_gerarCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(btn_sair)
-                .addGap(40, 40, 40))
+            .addGap(0, 400, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_gerarCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gerarCartaoActionPerformed
+    private void btn_consorcioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_consorcioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_gerarCartaoActionPerformed
+    }//GEN-LAST:event_btn_consorcioActionPerformed
 
-    private void btn_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sairActionPerformed
-       this.setVisible(false);
-       TelaLogin login = new TelaLogin();
-       login.show();
-    }//GEN-LAST:event_btn_sairActionPerformed
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        this.setVisible(false);
+        TelaLogin login = new TelaLogin();
+        login.show();
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,18 +165,21 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton btn_abrirConta;
-    private javax.swing.JToggleButton btn_cancelarCartao;
-    private javax.swing.JToggleButton btn_consorcio;
-    private javax.swing.JToggleButton btn_consultarInfoCliente;
-    private javax.swing.JToggleButton btn_emprestimos;
-    private javax.swing.JToggleButton btn_estorno;
-    private javax.swing.JToggleButton btn_financiamento;
-    private javax.swing.JToggleButton btn_gerarCartao;
-    private javax.swing.JToggleButton btn_investimentos;
-    private javax.swing.JToggleButton btn_movimentacoes;
-    private javax.swing.JToggleButton btn_sair;
-    private javax.swing.JToggleButton btn_transacoesGrandes;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenuItem btn_abrirConta;
+    private javax.swing.JMenuItem btn_cancelarCartao;
+    private javax.swing.JMenuItem btn_consorcio;
+    private javax.swing.JMenuItem btn_consultarInfoCliente;
+    private javax.swing.JMenuItem btn_emprestimos;
+    private javax.swing.JMenuItem btn_estorno;
+    private javax.swing.JMenuItem btn_financiamento;
+    private javax.swing.JMenuItem btn_gerarCartao;
+    private javax.swing.JMenuItem btn_investimentos;
+    private javax.swing.JMenuItem btn_movimentacoes;
+    private javax.swing.JMenuItem btn_sobre;
+    private javax.swing.JMenuItem btn_transacoesGrandes;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 }
