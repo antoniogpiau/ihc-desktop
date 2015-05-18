@@ -31,9 +31,9 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         btn_abrirConta = new javax.swing.JMenuItem();
+        btn_consultarInfoCliente = new javax.swing.JMenuItem();
         btn_investimentos = new javax.swing.JMenuItem();
         btn_movimentacoes = new javax.swing.JMenuItem();
-        btn_consultarInfoCliente = new javax.swing.JMenuItem();
         btn_emprestimos = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         btn_gerarCartao = new javax.swing.JMenuItem();
@@ -79,6 +79,15 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(btn_abrirConta);
 
+        btn_consultarInfoCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK));
+        btn_consultarInfoCliente.setText("Consultar Informações de Clientes");
+        btn_consultarInfoCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_consultarInfoClienteActionPerformed(evt);
+            }
+        });
+        jMenu1.add(btn_consultarInfoCliente);
+
         btn_investimentos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_investimentos.setText("Acompanhar Ivestimentos");
         btn_investimentos.addActionListener(new java.awt.event.ActionListener() {
@@ -91,15 +100,6 @@ public class Principal extends javax.swing.JFrame {
         btn_movimentacoes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_movimentacoes.setText("Movimentações Bancárias");
         jMenu1.add(btn_movimentacoes);
-
-        btn_consultarInfoCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK));
-        btn_consultarInfoCliente.setText("Consultar Informações de Clientes");
-        btn_consultarInfoCliente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_consultarInfoClienteActionPerformed(evt);
-            }
-        });
-        jMenu1.add(btn_consultarInfoCliente);
 
         btn_emprestimos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_emprestimos.setText("Efetuar Empréstimos");
