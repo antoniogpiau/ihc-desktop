@@ -9,12 +9,12 @@ package bancogerente;
  *
  * @author Guto
  */
-public class Menu extends javax.swing.JFrame {
+public class Principal extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public Menu() {
+    public Principal() {
         initComponents();
     }
 
@@ -27,6 +27,7 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        dp_principal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         btn_abrirConta = new javax.swing.JMenuItem();
@@ -47,10 +48,34 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CapitalBankManager");
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+
+        dp_principal.setBackground(new java.awt.Color(51, 153, 255));
+
+        javax.swing.GroupLayout dp_principalLayout = new javax.swing.GroupLayout(dp_principal);
+        dp_principal.setLayout(dp_principalLayout);
+        dp_principalLayout.setHorizontalGroup(
+            dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 658, Short.MAX_VALUE)
+        );
+        dp_principalLayout.setVerticalGroup(
+            dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 414, Short.MAX_VALUE)
+        );
 
         jMenu1.setText("Capital Bank");
 
         btn_abrirConta.setText("Abrir Conta");
+        btn_abrirConta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_abrirContaActionPerformed(evt);
+            }
+        });
         jMenu1.add(btn_abrirConta);
 
         btn_investimentos.setText("Acompanhar Ivestimentos");
@@ -113,11 +138,13 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 658, Short.MAX_VALUE)
+            .addComponent(dp_principal)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(dp_principal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -132,6 +159,16 @@ public class Menu extends javax.swing.JFrame {
         TelaLogin login = new TelaLogin();
         login.show();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        this.setLocationRelativeTo(null);
+    }//GEN-LAST:event_formWindowOpened
+
+    private void btn_abrirContaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_abrirContaActionPerformed
+        CriarConta cConta = new CriarConta();
+        this.dp_principal.add(cConta);
+        cConta.show();
+    }//GEN-LAST:event_btn_abrirContaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,20 +187,21 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new Principal().setVisible(true);
             }
         });
     }
@@ -181,6 +219,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem btn_movimentacoes;
     private javax.swing.JMenuItem btn_sobre;
     private javax.swing.JMenuItem btn_transacoesGrandes;
+    private javax.swing.JDesktopPane dp_principal;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

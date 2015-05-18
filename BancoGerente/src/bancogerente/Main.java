@@ -6,12 +6,8 @@
 package bancogerente;
 
 public class Main {
-
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) { 
         TelaLogin anyFrame = new TelaLogin();
-        anyFrame.show();
-                
-    }
-    
+        anyFrame.show();        
+    } 
 }
