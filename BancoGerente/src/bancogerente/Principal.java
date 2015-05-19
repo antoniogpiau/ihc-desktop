@@ -27,7 +27,15 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
         dp_principal = new javax.swing.JDesktopPane();
+        btn_cartao = new javax.swing.JButton();
+        btn_abrirConta2 = new javax.swing.JButton();
+        btn_emprestimos2 = new javax.swing.JButton();
+        btn_investimentos2 = new javax.swing.JButton();
+        btn_transacoes2 = new javax.swing.JButton();
+        jp_logo = new javax.swing.JPanel();
+        lb_logoTitle = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         btn_abrirConta = new javax.swing.JMenuItem();
@@ -36,6 +44,7 @@ public class Principal extends javax.swing.JFrame {
         btn_movimentacoes = new javax.swing.JMenuItem();
         btn_emprestimos = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMenu3 = new javax.swing.JMenu();
         btn_gerarCartao = new javax.swing.JMenuItem();
         btn_cancelarCartao = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
@@ -47,6 +56,8 @@ public class Principal extends javax.swing.JFrame {
         btn_sobre = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
 
+        jButton1.setText("jButton1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CapitalBankManager");
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -57,16 +68,116 @@ public class Principal extends javax.swing.JFrame {
 
         dp_principal.setBackground(new java.awt.Color(51, 153, 255));
 
+        btn_cartao.setBackground(new java.awt.Color(51, 153, 255));
+        btn_cartao.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_cartao.setForeground(new java.awt.Color(255, 255, 255));
+        btn_cartao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-bank-cards-32.png"))); // NOI18N
+        btn_cartao.setText("Cartão");
+        btn_cartao.setBorderPainted(false);
+
+        btn_abrirConta2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_abrirConta2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_abrirConta2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_abrirConta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-money-bag-32.png"))); // NOI18N
+        btn_abrirConta2.setText("Abrir Conta");
+        btn_abrirConta2.setBorderPainted(false);
+        btn_abrirConta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_abrirConta2ActionPerformed(evt);
+            }
+        });
+
+        btn_emprestimos2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_emprestimos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_emprestimos2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_emprestimos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-bank-32.png"))); // NOI18N
+        btn_emprestimos2.setText("Empréstimos");
+        btn_emprestimos2.setBorderPainted(false);
+        btn_emprestimos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_emprestimos2ActionPerformed(evt);
+            }
+        });
+
+        btn_investimentos2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_investimentos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_investimentos2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_investimentos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-moneybox-32.png"))); // NOI18N
+        btn_investimentos2.setText("Investimentos");
+        btn_investimentos2.setBorderPainted(false);
+
+        btn_transacoes2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_transacoes2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_transacoes2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_transacoes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-banknotes-32.png"))); // NOI18N
+        btn_transacoes2.setText("Transações");
+        btn_transacoes2.setBorderPainted(false);
+
+        jp_logo.setBackground(new java.awt.Color(51, 153, 255));
+        jp_logo.setMaximumSize(new java.awt.Dimension(100, 500));
+
+        lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
+        lb_logoTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lb_logoTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lb_logoTitle.setIcon(new javax.swing.ImageIcon("C:\\Users\\Guto\\Desktop\\bank-128.png")); // NOI18N
+        lb_logoTitle.setText("CapitalBank");
+
+        javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);
+        jp_logo.setLayout(jp_logoLayout);
+        jp_logoLayout.setHorizontalGroup(
+            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_logoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lb_logoTitle)
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+        jp_logoLayout.setVerticalGroup(
+            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_logoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lb_logoTitle)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout dp_principalLayout = new javax.swing.GroupLayout(dp_principal);
         dp_principal.setLayout(dp_principalLayout);
         dp_principalLayout.setHorizontalGroup(
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 658, Short.MAX_VALUE)
+            .addGroup(dp_principalLayout.createSequentialGroup()
+                .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_emprestimos2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_investimentos2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_transacoes2)
+                .addGap(0, 8, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dp_principalLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(139, 139, 139))
         );
         dp_principalLayout.setVerticalGroup(
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 414, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dp_principalLayout.createSequentialGroup()
+                .addGroup(dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_emprestimos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_investimentos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_transacoes2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(82, 82, 82)
+                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(87, Short.MAX_VALUE))
         );
+        dp_principal.setLayer(btn_cartao, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        dp_principal.setLayer(btn_abrirConta2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        dp_principal.setLayer(btn_emprestimos2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        dp_principal.setLayer(btn_investimentos2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        dp_principal.setLayer(btn_transacoes2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        dp_principal.setLayer(jp_logo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jMenu1.setText("Capital Bank");
 
@@ -90,11 +201,6 @@ public class Principal extends javax.swing.JFrame {
 
         btn_investimentos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_investimentos.setText("Acompanhar Ivestimentos");
-        btn_investimentos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_investimentosActionPerformed(evt);
-            }
-        });
         jMenu1.add(btn_investimentos);
 
         btn_movimentacoes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
@@ -102,17 +208,26 @@ public class Principal extends javax.swing.JFrame {
         jMenu1.add(btn_movimentacoes);
 
         btn_emprestimos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        btn_emprestimos.setText("Efetuar Empréstimos");
+        btn_emprestimos.setText("Aprovar Empréstimos");
+        btn_emprestimos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_emprestimosActionPerformed(evt);
+            }
+        });
         jMenu1.add(btn_emprestimos);
         jMenu1.add(jSeparator1);
 
+        jMenu3.setText("Cartão");
+
         btn_gerarCartao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_gerarCartao.setText("Gerar Cartão de Crédito");
-        jMenu1.add(btn_gerarCartao);
+        jMenu3.add(btn_gerarCartao);
 
         btn_cancelarCartao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         btn_cancelarCartao.setText("Cancelar Cartão de Crédito");
-        jMenu1.add(btn_cancelarCartao);
+        jMenu3.add(btn_cancelarCartao);
+
+        jMenu1.add(jMenu3);
         jMenu1.add(jSeparator2);
 
         btn_transacoesGrandes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
@@ -197,10 +312,6 @@ public class Principal extends javax.swing.JFrame {
         cConta.show();
     }//GEN-LAST:event_btn_abrirContaActionPerformed
 
-    private void btn_investimentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_investimentosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_investimentosActionPerformed
-
     private void btn_sobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sobreActionPerformed
         JOptionPane.showMessageDialog(null,"Desenvolvido pela AFRLS em parceria com o curso de Sistemas de Informação da PUC-Campinas.");
     }//GEN-LAST:event_btn_sobreActionPerformed
@@ -210,6 +321,24 @@ public class Principal extends javax.swing.JFrame {
        this.dp_principal.add(cInfo);
        cInfo.show();
     }//GEN-LAST:event_btn_consultarInfoClienteActionPerformed
+
+    private void btn_abrirConta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_abrirConta2ActionPerformed
+        CriarConta cConta = new CriarConta();
+        this.dp_principal.add(cConta);
+        cConta.show();
+    }//GEN-LAST:event_btn_abrirConta2ActionPerformed
+
+    private void btn_emprestimosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_emprestimosActionPerformed
+        Emprestimos cEmpres = new Emprestimos();
+        this.dp_principal.add(cEmpres);
+        cEmpres.show();
+    }//GEN-LAST:event_btn_emprestimosActionPerformed
+
+    private void btn_emprestimos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_emprestimos2ActionPerformed
+        Emprestimos cEmpres = new Emprestimos();
+        this.dp_principal.add(cEmpres);
+        cEmpres.show();
+    }//GEN-LAST:event_btn_emprestimos2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -249,23 +378,32 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem btn_abrirConta;
+    private javax.swing.JButton btn_abrirConta2;
     private javax.swing.JMenuItem btn_cancelarCartao;
+    private javax.swing.JButton btn_cartao;
     private javax.swing.JMenuItem btn_consorcio;
     private javax.swing.JMenuItem btn_consultarInfoCliente;
     private javax.swing.JMenuItem btn_emprestimos;
+    private javax.swing.JButton btn_emprestimos2;
     private javax.swing.JMenuItem btn_estorno;
     private javax.swing.JMenuItem btn_financiamento;
     private javax.swing.JMenuItem btn_gerarCartao;
     private javax.swing.JMenuItem btn_investimentos;
+    private javax.swing.JButton btn_investimentos2;
     private javax.swing.JMenuItem btn_movimentacoes;
     private javax.swing.JMenuItem btn_sobre;
+    private javax.swing.JButton btn_transacoes2;
     private javax.swing.JMenuItem btn_transacoesGrandes;
     private javax.swing.JDesktopPane dp_principal;
+    private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPanel jp_logo;
+    private javax.swing.JLabel lb_logoTitle;
     // End of variables declaration//GEN-END:variables
 }
