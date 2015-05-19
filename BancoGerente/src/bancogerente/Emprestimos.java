@@ -34,6 +34,8 @@ public class Emprestimos extends javax.swing.JInternalFrame {
         btn_fechar = new javax.swing.JButton();
         btn_enviar = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
         setTitle("Empréstimos");
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
@@ -99,18 +101,18 @@ public class Emprestimos extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_enviar))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_fechar)
                     .addComponent(btn_enviar))
-                .addGap(42, 42, 42))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();

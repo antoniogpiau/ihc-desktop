@@ -50,6 +50,7 @@ public class ConsultarInfo extends javax.swing.JInternalFrame {
         jLabel9 = new javax.swing.JLabel();
         tf_numero = new javax.swing.JTextField();
 
+        setClosable(true);
         setIconifiable(true);
         setTitle("Consultar Informações");
 

@@ -44,6 +44,7 @@ public class CriarConta extends javax.swing.JInternalFrame {
         jLabel7 = new javax.swing.JLabel();
         tf_numero = new javax.swing.JTextField();
 
+        setClosable(true);
         setIconifiable(true);
         setTitle("Criar Conta");
 
