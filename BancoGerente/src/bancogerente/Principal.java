@@ -113,6 +113,11 @@ public class Principal extends javax.swing.JFrame {
         btn_transacoes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-banknotes-32.png"))); // NOI18N
         btn_transacoes2.setText("Transações");
         btn_transacoes2.setBorderPainted(false);
+        btn_transacoes2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_transacoes2ActionPerformed(evt);
+            }
+        });
 
         btn_investimentos2.setBackground(new java.awt.Color(51, 153, 255));
         btn_investimentos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
@@ -282,6 +287,11 @@ public class Principal extends javax.swing.JFrame {
 
         btn_transacoesGrandes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_transacoesGrandes.setText("Transações de Grandes Valores");
+        btn_transacoesGrandes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_transacoesGrandesActionPerformed(evt);
+            }
+        });
         jMenu1.add(btn_transacoesGrandes);
 
         btn_estorno.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
@@ -411,6 +421,18 @@ public class Principal extends javax.swing.JFrame {
         this.dp_principal.add(cCartao);
         cCartao.show();
     }//GEN-LAST:event_btn_cancelarCartaoActionPerformed
+
+    private void btn_transacoesGrandesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_transacoesGrandesActionPerformed
+        Transacoes trans = new Transacoes();
+        this.dp_principal.add(trans);
+        trans.show();
+    }//GEN-LAST:event_btn_transacoesGrandesActionPerformed
+
+    private void btn_transacoes2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_transacoes2ActionPerformed
+        Transacoes trans = new Transacoes();
+        this.dp_principal.add(trans);
+        trans.show();
+    }//GEN-LAST:event_btn_transacoes2ActionPerformed
 
     /**
      * @param args the command line arguments

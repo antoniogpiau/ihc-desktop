@@ -28,11 +28,6 @@ public class TelaLogin extends javax.swing.JFrame {
                 formWindowOpened(evt);
             }
         });
-        addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                formKeyPressed(evt);
-            }
-        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Usuario:");
@@ -131,10 +126,6 @@ public class TelaLogin extends javax.swing.JFrame {
         lb_erro.setVisible(false);
         this.setLocationRelativeTo(null);
     }//GEN-LAST:event_formWindowOpened
-
-    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
-
-    }//GEN-LAST:event_formKeyPressed
 
     private void pf_senhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pf_senhaKeyPressed
         if(evt.getKeyCode()==KeyEvent.VK_ENTER){

@@ -103,6 +103,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Transa&#xe7;&#xf5;es de Grandes Valores"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_transacoesGrandesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btn_estorno">
               <Properties>
@@ -375,6 +378,9 @@
                 <Property name="text" type="java.lang.String" value="Transa&#xe7;&#xf5;es"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_transacoes2ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn_investimentos2">
               <Properties>
