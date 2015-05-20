@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package bancogerente;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 /**
  *
@@ -61,6 +62,8 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CapitalBankManager");
+        setBackground(new java.awt.Color(51, 153, 255));
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -156,10 +159,6 @@ public class Principal extends javax.swing.JFrame {
         dp_principalLayout.setHorizontalGroup(
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dp_principalLayout.createSequentialGroup()
-                .addGap(191, 191, 191)
-                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(dp_principalLayout.createSequentialGroup()
                 .addGroup(dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(dp_principalLayout.createSequentialGroup()
                         .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -171,11 +170,15 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(btn_investimentos2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btn_transacoes2)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 10, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dp_principalLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1)))
                 .addContainerGap())
+            .addGroup(dp_principalLayout.createSequentialGroup()
+                .addGap(133, 133, 133)
+                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         dp_principalLayout.setVerticalGroup(
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,9 +189,9 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(btn_emprestimos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_investimentos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_transacoes2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57)
+                .addGap(50, 50, 50)
                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(40, 40, 40))
         );
@@ -251,6 +254,11 @@ public class Principal extends javax.swing.JFrame {
 
         btn_cancelarCartao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         btn_cancelarCartao.setText("Cancelar Cartão de Crédito");
+        btn_cancelarCartao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cancelarCartaoActionPerformed(evt);
+            }
+        });
         jMenu3.add(btn_cancelarCartao);
 
         jMenu1.add(jMenu3);
@@ -306,7 +314,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dp_principal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(dp_principal)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,6 +337,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setLocationRelativeTo(null);
         Lembretes lembretes = new Lembretes();
         this.dp_principal.add(lembretes);
@@ -380,6 +389,12 @@ public class Principal extends javax.swing.JFrame {
         this.dp_principal.add(gCartao);
         gCartao.show();
     }//GEN-LAST:event_btn_cartaoActionPerformed
+
+    private void btn_cancelarCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarCartaoActionPerformed
+        CancelarCartao cCartao = new CancelarCartao();
+        this.dp_principal.add(cCartao);
+        cCartao.show();
+    }//GEN-LAST:event_btn_cancelarCartaoActionPerformed
 
     /**
      * @param args the command line arguments
