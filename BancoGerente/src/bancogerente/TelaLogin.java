@@ -1,5 +1,7 @@
 package bancogerente;
 
+import com.sun.glass.events.KeyEvent;
+
 public class TelaLogin extends javax.swing.JFrame {
 
     public TelaLogin() {
@@ -26,6 +28,11 @@ public class TelaLogin extends javax.swing.JFrame {
                 formWindowOpened(evt);
             }
         });
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Usuario:");
@@ -45,6 +52,11 @@ public class TelaLogin extends javax.swing.JFrame {
         tf_usuario.setName("tf_usuario"); // NOI18N
 
         pf_senha.setName("pf_senha"); // NOI18N
+        pf_senha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                pf_senhaKeyPressed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Banco Gerente");
@@ -119,6 +131,22 @@ public class TelaLogin extends javax.swing.JFrame {
         lb_erro.setVisible(false);
         this.setLocationRelativeTo(null);
     }//GEN-LAST:event_formWindowOpened
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+
+    }//GEN-LAST:event_formKeyPressed
+
+    private void pf_senhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pf_senhaKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            if ((tf_usuario.getText().equals("ADMIN"))&&(pf_senha.getText().equals("senha123"))){
+                this.setVisible(false);
+                Principal menu = new Principal();
+                menu.show();
+            }else{
+                lb_erro.setVisible(true);
+            } 
+        }
+    }//GEN-LAST:event_pf_senhaKeyPressed
 
     public static void main(String args[]) {
 

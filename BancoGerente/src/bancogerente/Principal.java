@@ -30,14 +30,15 @@ public class Principal extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         dp_principal = new javax.swing.JDesktopPane();
-        btn_cartao = new javax.swing.JButton();
-        btn_abrirConta2 = new javax.swing.JButton();
-        btn_emprestimos2 = new javax.swing.JButton();
-        btn_investimentos2 = new javax.swing.JButton();
-        btn_transacoes2 = new javax.swing.JButton();
         jp_logo = new javax.swing.JPanel();
         lb_logoTitle = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        btn_transacoes2 = new javax.swing.JButton();
+        btn_investimentos2 = new javax.swing.JButton();
+        btn_emprestimos2 = new javax.swing.JButton();
+        btn_cartao = new javax.swing.JButton();
+        btn_abrirConta2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         btn_abrirConta = new javax.swing.JMenuItem();
@@ -72,6 +73,66 @@ public class Principal extends javax.swing.JFrame {
 
         dp_principal.setBackground(new java.awt.Color(51, 153, 255));
 
+        jp_logo.setBackground(new java.awt.Color(51, 153, 255));
+        jp_logo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jp_logo.setMaximumSize(new java.awt.Dimension(100, 500));
+
+        lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
+        lb_logoTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lb_logoTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lb_logoTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/bank-128.png"))); // NOI18N
+        lb_logoTitle.setText("CapitalBank");
+
+        javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);
+        jp_logo.setLayout(jp_logoLayout);
+        jp_logoLayout.setHorizontalGroup(
+            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_logoLayout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(lb_logoTitle)
+                .addContainerGap())
+        );
+        jp_logoLayout.setVerticalGroup(
+            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_logoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lb_logoTitle))
+        );
+
+        lb_logoTitle.getAccessibleContext().setAccessibleDescription("");
+
+        jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("CPTLBNKBR=+255,85");
+
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
+
+        btn_transacoes2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_transacoes2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_transacoes2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_transacoes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-banknotes-32.png"))); // NOI18N
+        btn_transacoes2.setText("Transações");
+        btn_transacoes2.setBorderPainted(false);
+
+        btn_investimentos2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_investimentos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_investimentos2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_investimentos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-moneybox-32.png"))); // NOI18N
+        btn_investimentos2.setText("Investimentos");
+        btn_investimentos2.setBorderPainted(false);
+
+        btn_emprestimos2.setBackground(new java.awt.Color(51, 153, 255));
+        btn_emprestimos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_emprestimos2.setForeground(new java.awt.Color(255, 255, 255));
+        btn_emprestimos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-bank-32.png"))); // NOI18N
+        btn_emprestimos2.setText("Empréstimos");
+        btn_emprestimos2.setBorderPainted(false);
+        btn_emprestimos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_emprestimos2ActionPerformed(evt);
+            }
+        });
+
         btn_cartao.setBackground(new java.awt.Color(51, 153, 255));
         btn_cartao.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
         btn_cartao.setForeground(new java.awt.Color(255, 255, 255));
@@ -96,63 +157,33 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        btn_emprestimos2.setBackground(new java.awt.Color(51, 153, 255));
-        btn_emprestimos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
-        btn_emprestimos2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_emprestimos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-bank-32.png"))); // NOI18N
-        btn_emprestimos2.setText("Empréstimos");
-        btn_emprestimos2.setBorderPainted(false);
-        btn_emprestimos2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_emprestimos2ActionPerformed(evt);
-            }
-        });
-
-        btn_investimentos2.setBackground(new java.awt.Color(51, 153, 255));
-        btn_investimentos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
-        btn_investimentos2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_investimentos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-moneybox-32.png"))); // NOI18N
-        btn_investimentos2.setText("Investimentos");
-        btn_investimentos2.setBorderPainted(false);
-
-        btn_transacoes2.setBackground(new java.awt.Color(51, 153, 255));
-        btn_transacoes2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
-        btn_transacoes2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_transacoes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-banknotes-32.png"))); // NOI18N
-        btn_transacoes2.setText("Transações");
-        btn_transacoes2.setBorderPainted(false);
-
-        jp_logo.setBackground(new java.awt.Color(51, 153, 255));
-        jp_logo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jp_logo.setMaximumSize(new java.awt.Dimension(100, 500));
-
-        lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
-        lb_logoTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lb_logoTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lb_logoTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/bank-128.png"))); // NOI18N
-        lb_logoTitle.setText("CapitalBank");
-
-        javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);
-        jp_logo.setLayout(jp_logoLayout);
-        jp_logoLayout.setHorizontalGroup(
-            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_logoLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
-                .addComponent(lb_logoTitle)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btn_emprestimos2)
+                .addGap(15, 15, 15)
+                .addComponent(btn_investimentos2)
+                .addGap(18, 18, 18)
+                .addComponent(btn_transacoes2))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(17, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_emprestimos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_investimentos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_transacoes2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jp_logoLayout.setVerticalGroup(
-            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jp_logoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lb_logoTitle))
-        );
-
-        lb_logoTitle.getAccessibleContext().setAccessibleDescription("");
-
-        jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("CPTLBNKBR=+255,85");
 
         javax.swing.GroupLayout dp_principalLayout = new javax.swing.GroupLayout(dp_principal);
         dp_principal.setLayout(dp_principalLayout);
@@ -160,48 +191,33 @@ public class Principal extends javax.swing.JFrame {
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dp_principalLayout.createSequentialGroup()
                 .addGroup(dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(dp_principalLayout.createSequentialGroup()
-                        .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_emprestimos2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_investimentos2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_transacoes2)
-                        .addGap(0, 10, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dp_principalLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(dp_principalLayout.createSequentialGroup()
+                        .addGroup(dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(dp_principalLayout.createSequentialGroup()
+                                .addGap(74, 74, 74)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(dp_principalLayout.createSequentialGroup()
+                                .addGap(273, 273, 273)
+                                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 125, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(dp_principalLayout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         dp_principalLayout.setVerticalGroup(
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dp_principalLayout.createSequentialGroup()
-                .addGroup(dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_emprestimos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_investimentos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_transacoes2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(124, 124, 124)
                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(40, 40, 40))
         );
-        dp_principal.setLayer(btn_cartao, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        dp_principal.setLayer(btn_abrirConta2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        dp_principal.setLayer(btn_emprestimos2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        dp_principal.setLayer(btn_investimentos2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        dp_principal.setLayer(btn_transacoes2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         dp_principal.setLayer(jp_logo, javax.swing.JLayeredPane.DEFAULT_LAYER);
         dp_principal.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        dp_principal.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jMenu1.setText("Capital Bank");
 
@@ -314,11 +330,11 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dp_principal)
+            .addComponent(dp_principal, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(dp_principal)
                 .addGap(0, 0, 0))
         );
@@ -458,6 +474,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPanel jp_logo;
