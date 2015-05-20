@@ -214,27 +214,27 @@ public class GerarCartao extends javax.swing.JInternalFrame {
                 ta_descricao.setText("O cartão Student é exclusivo para estudantes e "
                         + "\n com uma série de descontos e estabelecimentos"
                         + "\n além da taxa de manutenção ser nula.");
-            ;
+            ;break;
             case "Silver":
                 ta_descricao.setText("O cartão Silver é recomendado como primeiro "
                         + "\n cartão de créditos e conta com uma taxa de "
                         + "\n manutenção baixa.");
-            ;
+            ;break;
             case "Gold":
                 ta_descricao.setText("O cartão Gold é recomendado para gastos "
                         + "\n de até 10 mil reais mensais e conta com"
                         + "\n atendimento personal 24/7.");
-            ;
+            ;break;
             case "Platinum":
                 ta_descricao.setText("O cartão Platinum é destinado apenas para"
                         + "\n nossos melhores e mais refinados clientes,"
                         + "\n para gastos de até 50 mil reais mensais.");
-            ;
+            ;break;
             case "International":
                 ta_descricao.setText("O cartão International é ótimo para"
                         + "\n fazer compras onlines e para aqueles que"
                         + "\n viajam muito ao exterior.");
-            ;
+            ;break;
             case "Travel":
                 ta_descricao.setText("O cartão Travel é emitido para fins"
                         + "\n turísticos e são abastecidos conforme"
