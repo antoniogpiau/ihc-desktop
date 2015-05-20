@@ -121,7 +121,7 @@ public class Principal extends javax.swing.JFrame {
         lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
         lb_logoTitle.setForeground(new java.awt.Color(255, 255, 255));
         lb_logoTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lb_logoTitle.setIcon(new javax.swing.ImageIcon("C:\\Users\\Guto\\Desktop\\bank-128.png")); // NOI18N
+        lb_logoTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/bank-128.png"))); // NOI18N
         lb_logoTitle.setText("CapitalBank");
 
         javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);

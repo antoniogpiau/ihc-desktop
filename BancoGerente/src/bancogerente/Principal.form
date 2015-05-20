@@ -393,7 +393,7 @@
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Guto\Desktop\bank-128.png"/>
+                  <Image iconType="3" name="/bancogerente/Images/bank-128.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="CapitalBank"/>
               </Properties>
