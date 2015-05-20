@@ -75,6 +75,7 @@ public class Emprestimos extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(table_emprestimos);
 
+        btn_fechar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_fechar.setText("Fechar");
         btn_fechar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +83,7 @@ public class Emprestimos extends javax.swing.JInternalFrame {
             }
         });
 
+        btn_enviar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_enviar.setText("Enviar Respostas");
         btn_enviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

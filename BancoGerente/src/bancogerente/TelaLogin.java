@@ -27,12 +27,13 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Usuario:");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Senha:");
 
+        btn_entrar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_entrar.setText("Entrar");
         btn_entrar.setName("btn_entrar"); // NOI18N
         btn_entrar.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +61,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(84, 84, 84))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
+                .addContainerGap(30, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)

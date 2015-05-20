@@ -75,6 +75,11 @@ public class Principal extends javax.swing.JFrame {
         btn_cartao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-bank-cards-32.png"))); // NOI18N
         btn_cartao.setText("Gerar Cartão");
         btn_cartao.setBorderPainted(false);
+        btn_cartao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cartaoActionPerformed(evt);
+            }
+        });
 
         btn_abrirConta2.setBackground(new java.awt.Color(51, 153, 255));
         btn_abrirConta2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
@@ -237,6 +242,11 @@ public class Principal extends javax.swing.JFrame {
 
         btn_gerarCartao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_gerarCartao.setText("Gerar Cartão de Crédito");
+        btn_gerarCartao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_gerarCartaoActionPerformed(evt);
+            }
+        });
         jMenu3.add(btn_gerarCartao);
 
         btn_cancelarCartao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
@@ -358,6 +368,18 @@ public class Principal extends javax.swing.JFrame {
         this.dp_principal.add(cEmpres);
         cEmpres.show();
     }//GEN-LAST:event_btn_emprestimos2ActionPerformed
+
+    private void btn_gerarCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gerarCartaoActionPerformed
+        GerarCartao gCartao = new GerarCartao();
+        this.dp_principal.add(gCartao);
+        gCartao.show();
+    }//GEN-LAST:event_btn_gerarCartaoActionPerformed
+
+    private void btn_cartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cartaoActionPerformed
+        GerarCartao gCartao = new GerarCartao();
+        this.dp_principal.add(gCartao);
+        gCartao.show();
+    }//GEN-LAST:event_btn_cartaoActionPerformed
 
     /**
      * @param args the command line arguments
