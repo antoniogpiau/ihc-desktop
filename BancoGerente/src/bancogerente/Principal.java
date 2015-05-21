@@ -53,7 +53,6 @@ public class Principal extends javax.swing.JFrame {
         btn_transacoesGrandes = new javax.swing.JMenuItem();
         btn_estorno = new javax.swing.JMenuItem();
         btn_financiamento = new javax.swing.JMenuItem();
-        btn_consorcio = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         btn_sobre = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -308,15 +307,6 @@ public class Principal extends javax.swing.JFrame {
         btn_financiamento.setText("Financiamento");
         jMenu1.add(btn_financiamento);
 
-        btn_consorcio.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        btn_consorcio.setText("Consórcio");
-        btn_consorcio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_consorcioActionPerformed(evt);
-            }
-        });
-        jMenu1.add(btn_consorcio);
-
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Ajuda");
@@ -357,10 +347,6 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btn_consorcioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_consorcioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_consorcioActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         this.setVisible(false);
@@ -493,7 +479,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton btn_abrirConta2;
     private javax.swing.JMenuItem btn_cancelarCartao;
     private javax.swing.JButton btn_cartao;
-    private javax.swing.JMenuItem btn_consorcio;
     private javax.swing.JMenuItem btn_consultarInfoCliente;
     private javax.swing.JMenuItem btn_emprestimos;
     private javax.swing.JButton btn_emprestimos2;
