@@ -43,7 +43,6 @@ public class Principal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         btn_abrirConta = new javax.swing.JMenuItem();
         btn_consultarInfoCliente = new javax.swing.JMenuItem();
-        btn_investimentos = new javax.swing.JMenuItem();
         btn_movimentacoes = new javax.swing.JMenuItem();
         btn_emprestimos = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
@@ -124,8 +123,13 @@ public class Principal extends javax.swing.JFrame {
         btn_investimentos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
         btn_investimentos2.setForeground(new java.awt.Color(255, 255, 255));
         btn_investimentos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-moneybox-32.png"))); // NOI18N
-        btn_investimentos2.setText("Investimentos");
+        btn_investimentos2.setText("Movimentações");
         btn_investimentos2.setBorderPainted(false);
+        btn_investimentos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_investimentos2ActionPerformed(evt);
+            }
+        });
 
         btn_emprestimos2.setBackground(new java.awt.Color(51, 153, 255));
         btn_emprestimos2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
@@ -208,7 +212,7 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(dp_principalLayout.createSequentialGroup()
                                 .addGap(273, 273, 273)
                                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 54, Short.MAX_VALUE)))
+                        .addGap(0, 53, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         dp_principalLayout.setVerticalGroup(
@@ -245,12 +249,13 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(btn_consultarInfoCliente);
 
-        btn_investimentos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        btn_investimentos.setText("Acompanhar Ivestimentos");
-        jMenu1.add(btn_investimentos);
-
         btn_movimentacoes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_movimentacoes.setText("Movimentações Bancárias");
+        btn_movimentacoes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_movimentacoesActionPerformed(evt);
+            }
+        });
         jMenu1.add(btn_movimentacoes);
 
         btn_emprestimos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
@@ -341,7 +346,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dp_principal, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(dp_principal)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -435,6 +440,18 @@ public class Principal extends javax.swing.JFrame {
         trans.show();
     }//GEN-LAST:event_btn_transacoes2ActionPerformed
 
+    private void btn_movimentacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_movimentacoesActionPerformed
+        Movimentacao mov = new Movimentacao();
+        this.dp_principal.add(mov);
+        mov.show();
+    }//GEN-LAST:event_btn_movimentacoesActionPerformed
+
+    private void btn_investimentos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_investimentos2ActionPerformed
+        Movimentacao mov = new Movimentacao();
+        this.dp_principal.add(mov);
+        mov.show();
+    }//GEN-LAST:event_btn_investimentos2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -483,7 +500,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem btn_estorno;
     private javax.swing.JMenuItem btn_financiamento;
     private javax.swing.JMenuItem btn_gerarCartao;
-    private javax.swing.JMenuItem btn_investimentos;
     private javax.swing.JButton btn_investimentos2;
     private javax.swing.JMenuItem btn_movimentacoes;
     private javax.swing.JMenuItem btn_sobre;

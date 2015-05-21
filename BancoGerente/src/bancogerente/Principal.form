@@ -36,14 +36,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_consultarInfoClienteActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="btn_investimentos">
-              <Properties>
-                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+Alt+I"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Acompanhar Ivestimentos"/>
-              </Properties>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btn_movimentacoes">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
@@ -51,6 +43,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Movimenta&#xe7;&#xf5;es Banc&#xe1;rias"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_movimentacoesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btn_emprestimos">
               <Properties>
@@ -196,7 +191,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="dp_principal" alignment="1" max="32767" attributes="0"/>
+          <Component id="dp_principal" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -236,7 +231,7 @@
                                   <Component id="jp_logo" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="54" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -397,9 +392,12 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/bancogerente/Images/white-moneybox-32.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Investimentos"/>
+                <Property name="text" type="java.lang.String" value="Movimenta&#xe7;&#xf5;es"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_investimentos2ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn_emprestimos2">
               <Properties>
