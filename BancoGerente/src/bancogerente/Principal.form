@@ -236,7 +236,7 @@
                                   <Component id="jp_logo" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="71" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="54" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -249,7 +249,7 @@
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
                   <Component id="jp_logo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="137" max="32767" attributes="0"/>
+                  <EmptySpace pref="91" max="32767" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
@@ -273,18 +273,19 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="lb_logoTitle" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="36" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="lb_logoTitle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="46" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -300,7 +301,7 @@
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/bancogerente/Images/bank-128.png"/>
+                  <Image iconType="3" name="/bancogerente/Images/logoVetorial.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="CapitalBank"/>
               </Properties>
