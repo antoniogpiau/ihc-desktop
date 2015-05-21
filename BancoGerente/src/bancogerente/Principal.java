@@ -207,7 +207,7 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(dp_principalLayout.createSequentialGroup()
                                 .addGap(273, 273, 273)
                                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 125, Short.MAX_VALUE)))
+                        .addGap(0, 71, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         dp_principalLayout.setVerticalGroup(
@@ -363,7 +363,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setLocationRelativeTo(null);
         Lembretes lembretes = new Lembretes();
         this.dp_principal.add(lembretes);
