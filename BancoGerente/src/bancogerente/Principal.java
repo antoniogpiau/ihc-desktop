@@ -44,7 +44,9 @@ public class Principal extends javax.swing.JFrame {
         btn_abrirConta = new javax.swing.JMenuItem();
         btn_consultarInfoCliente = new javax.swing.JMenuItem();
         btn_movimentacoes = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
         btn_emprestimos = new javax.swing.JMenuItem();
+        btn_devedores = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenu3 = new javax.swing.JMenu();
         btn_gerarCartao = new javax.swing.JMenuItem();
@@ -257,6 +259,8 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(btn_movimentacoes);
 
+        jMenu4.setText("Empréstimos");
+
         btn_emprestimos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_emprestimos.setText("Aprovar Empréstimos");
         btn_emprestimos.addActionListener(new java.awt.event.ActionListener() {
@@ -264,7 +268,18 @@ public class Principal extends javax.swing.JFrame {
                 btn_emprestimosActionPerformed(evt);
             }
         });
-        jMenu1.add(btn_emprestimos);
+        jMenu4.add(btn_emprestimos);
+
+        btn_devedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        btn_devedores.setText("Consultar Devedores");
+        btn_devedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_devedoresActionPerformed(evt);
+            }
+        });
+        jMenu4.add(btn_devedores);
+
+        jMenu1.add(jMenu4);
         jMenu1.add(jSeparator1);
 
         jMenu3.setText("Cartão");
@@ -394,12 +409,6 @@ public class Principal extends javax.swing.JFrame {
         cConta.show();
     }//GEN-LAST:event_btn_abrirConta2ActionPerformed
 
-    private void btn_emprestimosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_emprestimosActionPerformed
-        Emprestimos cEmpres = new Emprestimos();
-        this.dp_principal.add(cEmpres);
-        cEmpres.show();
-    }//GEN-LAST:event_btn_emprestimosActionPerformed
-
     private void btn_emprestimos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_emprestimos2ActionPerformed
         Emprestimos cEmpres = new Emprestimos();
         this.dp_principal.add(cEmpres);
@@ -460,6 +469,18 @@ public class Principal extends javax.swing.JFrame {
         fin.show();
     }//GEN-LAST:event_btn_financiamentoActionPerformed
 
+    private void btn_emprestimosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_emprestimosActionPerformed
+       Emprestimos emp = new Emprestimos();
+       this.dp_principal.add(emp);
+       emp.show();
+    }//GEN-LAST:event_btn_emprestimosActionPerformed
+
+    private void btn_devedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_devedoresActionPerformed
+        Devedores deve = new Devedores();
+        this.dp_principal.add(deve);
+        deve.show();
+    }//GEN-LAST:event_btn_devedoresActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -502,6 +523,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem btn_cancelarCartao;
     private javax.swing.JButton btn_cartao;
     private javax.swing.JMenuItem btn_consultarInfoCliente;
+    private javax.swing.JMenuItem btn_devedores;
     private javax.swing.JMenuItem btn_emprestimos;
     private javax.swing.JButton btn_emprestimos2;
     private javax.swing.JMenuItem btn_estorno;
@@ -518,6 +540,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
