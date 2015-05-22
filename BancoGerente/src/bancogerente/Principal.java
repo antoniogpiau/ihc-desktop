@@ -75,7 +75,7 @@ public class Principal extends javax.swing.JFrame {
         jp_logo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jp_logo.setMaximumSize(new java.awt.Dimension(100, 500));
 
-        lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
+        lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 40)); // NOI18N
         lb_logoTitle.setForeground(new java.awt.Color(255, 255, 255));
         lb_logoTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lb_logoTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/logoVetorial.png"))); // NOI18N
@@ -88,7 +88,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jp_logoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lb_logoTitle)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jp_logoLayout.setVerticalGroup(
             jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +211,7 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(dp_principalLayout.createSequentialGroup()
                                 .addGap(273, 273, 273)
                                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 53, Short.MAX_VALUE)))
+                        .addGap(0, 125, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         dp_principalLayout.setVerticalGroup(
@@ -301,10 +301,20 @@ public class Principal extends javax.swing.JFrame {
 
         btn_estorno.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_estorno.setText("Realizar Estornos");
+        btn_estorno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_estornoActionPerformed(evt);
+            }
+        });
         jMenu1.add(btn_estorno);
 
         btn_financiamento.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_financiamento.setText("Financiamento");
+        btn_financiamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_financiamentoActionPerformed(evt);
+            }
+        });
         jMenu1.add(btn_financiamento);
 
         jMenuBar1.add(jMenu1);
@@ -437,6 +447,18 @@ public class Principal extends javax.swing.JFrame {
         this.dp_principal.add(mov);
         mov.show();
     }//GEN-LAST:event_btn_investimentos2ActionPerformed
+
+    private void btn_estornoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estornoActionPerformed
+       Estorno est = new Estorno();
+       this.dp_principal.add(est);
+       est.show();
+    }//GEN-LAST:event_btn_estornoActionPerformed
+
+    private void btn_financiamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_financiamentoActionPerformed
+        Financiamento fin = new Financiamento();
+        this.dp_principal.add(fin);
+        fin.show();
+    }//GEN-LAST:event_btn_financiamentoActionPerformed
 
     /**
      * @param args the command line arguments
