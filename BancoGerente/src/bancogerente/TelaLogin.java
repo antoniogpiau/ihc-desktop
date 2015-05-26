@@ -1,6 +1,7 @@
 package bancogerente;
 
 import com.sun.glass.events.KeyEvent;
+import javax.swing.JOptionPane;
 
 public class TelaLogin extends javax.swing.JFrame {
 
@@ -19,6 +20,7 @@ public class TelaLogin extends javax.swing.JFrame {
         pf_senha = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         lb_erro = new javax.swing.JLabel();
+        btn_esqueceSenha = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -59,6 +61,14 @@ public class TelaLogin extends javax.swing.JFrame {
         lb_erro.setForeground(new java.awt.Color(255, 0, 0));
         lb_erro.setText("Usuario ou senha incorretos.");
 
+        btn_esqueceSenha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_esqueceSenha.setText("Esqueci minha senha");
+        btn_esqueceSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_esqueceSenhaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -86,8 +96,13 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lb_erro)
-                .addGap(71, 71, 71))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(lb_erro)
+                        .addGap(71, 71, 71))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btn_esqueceSenha)
+                        .addGap(58, 58, 58))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -104,9 +119,11 @@ public class TelaLogin extends javax.swing.JFrame {
                     .addComponent(pf_senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(lb_erro)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_entrar)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_esqueceSenha)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -139,6 +156,10 @@ public class TelaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_pf_senhaKeyPressed
 
+    private void btn_esqueceSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_esqueceSenhaActionPerformed
+        JOptionPane.showMessageDialog(null,"Solicitação de recuperação de senha enviada ao administrador.");
+    }//GEN-LAST:event_btn_esqueceSenhaActionPerformed
+
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -150,6 +171,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton btn_entrar;
+    private javax.swing.JButton btn_esqueceSenha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
