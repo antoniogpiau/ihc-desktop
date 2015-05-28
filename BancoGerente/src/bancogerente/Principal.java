@@ -83,8 +83,7 @@ public class Principal extends javax.swing.JFrame {
         lb_logoTitle.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 40)); // NOI18N
         lb_logoTitle.setForeground(new java.awt.Color(255, 255, 255));
         lb_logoTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lb_logoTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/logoVetorial.png"))); // NOI18N
-        lb_logoTitle.setText("CapitalBank");
+        lb_logoTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/logo/CapitalBank_M_fontefeia.png"))); // NOI18N
 
         javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);
         jp_logo.setLayout(jp_logoLayout);
@@ -100,7 +99,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jp_logoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lb_logoTitle)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         lb_logoTitle.getAccessibleContext().setAccessibleDescription("");
@@ -210,23 +209,22 @@ public class Principal extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1))
                     .addGroup(dp_principalLayout.createSequentialGroup()
-                        .addGroup(dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(dp_principalLayout.createSequentialGroup()
-                                .addGap(74, 74, 74)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(dp_principalLayout.createSequentialGroup()
-                                .addGap(273, 273, 273)
-                                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 79, Short.MAX_VALUE)))
+                        .addGap(74, 74, 74)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 123, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(dp_principalLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         dp_principalLayout.setVerticalGroup(
             dp_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dp_principalLayout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(124, 124, 124)
+                .addGap(101, 101, 101)
                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(40, 40, 40))
         );
