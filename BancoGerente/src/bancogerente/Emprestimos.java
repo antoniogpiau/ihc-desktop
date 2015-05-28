@@ -33,6 +33,7 @@ public class Emprestimos extends javax.swing.JInternalFrame {
         table_emprestimos = new javax.swing.JTable();
         btn_fechar = new javax.swing.JButton();
         btn_enviar = new javax.swing.JButton();
+        btn_info4 = new javax.swing.JToggleButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -91,6 +92,14 @@ public class Emprestimos extends javax.swing.JInternalFrame {
             }
         });
 
+        btn_info4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_info4.setText("Mais Informações");
+        btn_info4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_info4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -101,6 +110,8 @@ public class Emprestimos extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btn_fechar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_info4)
+                        .addGap(43, 43, 43)
                         .addComponent(btn_enviar))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(27, Short.MAX_VALUE))
@@ -113,8 +124,9 @@ public class Emprestimos extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_fechar)
-                    .addComponent(btn_enviar))
-                .addContainerGap(30, Short.MAX_VALUE))
+                    .addComponent(btn_enviar)
+                    .addComponent(btn_info4))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         pack();
@@ -135,10 +147,15 @@ public class Emprestimos extends javax.swing.JInternalFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btn_enviarActionPerformed
 
+    private void btn_info4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_info4ActionPerformed
+        JOptionPane.showMessageDialog(null,"Antonio Souza, Agencia 1819 Conta:99099-9");
+    }//GEN-LAST:event_btn_info4ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_enviar;
     private javax.swing.JButton btn_fechar;
+    private javax.swing.JToggleButton btn_info4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable table_emprestimos;
     // End of variables declaration//GEN-END:variables
