@@ -30,6 +30,7 @@ public class Movimentacao extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jRadioButton1 = new javax.swing.JRadioButton();
         ftf_agencia = new javax.swing.JFormattedTextField();
         ftf_conta = new javax.swing.JFormattedTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -40,6 +41,9 @@ public class Movimentacao extends javax.swing.JInternalFrame {
         btn_fechar = new javax.swing.JToggleButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tb_movimentacao = new javax.swing.JTable();
+        btn_info = new javax.swing.JToggleButton();
+
+        jRadioButton1.setText("jRadioButton1");
 
         setClosable(true);
         setIconifiable(true);
@@ -90,7 +94,7 @@ public class Movimentacao extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "Conta", "Nome", "Valor (R$)", "Data da Movimentação"
+                "Tipo", "Nome", "Valor (R$)", "Data da Movimentação"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -103,19 +107,22 @@ public class Movimentacao extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(tb_movimentacao);
 
+        btn_info.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_info.setText("Mais Informações");
+        btn_info.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_infoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn_fechar)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
@@ -130,7 +137,17 @@ public class Movimentacao extends javax.swing.JInternalFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(ftf_conta, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(124, 124, 124)
-                        .addComponent(btn_criar)))
+                        .addComponent(btn_criar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btn_fechar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_info))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -149,9 +166,11 @@ public class Movimentacao extends javax.swing.JInternalFrame {
                     .addComponent(tf_nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addComponent(btn_fechar)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_fechar)
+                    .addComponent(btn_info))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         pack();
@@ -163,15 +182,15 @@ public class Movimentacao extends javax.swing.JInternalFrame {
             
             DefaultTableModel model = (DefaultTableModel) tb_movimentacao.getModel();
             
-            model.addRow(new Object[]{"03258-8","Roberto Andrade Nevez","+2800,00","25/06/2014"});
-            model.addRow(new Object[]{"45652-7","Marina Cunha","-1750,00","24/06/2014"});
-            model.addRow(new Object[]{"85548-5","Joao Augusto Nascimento","+800,00","24/06/2014"});
-            model.addRow(new Object[]{"45555-9","Carlos Freitas","+900,00","23/06/2014"});
-            model.addRow(new Object[]{"45655-2","Mateus Corti","-800,00","23/06/2014"});
-            model.addRow(new Object[]{"25854-3","Roberta Rutherburg","-550,00","20/06/2014"});
-            model.addRow(new Object[]{"42255-9","Carolina Mello","+920,00","20/06/2014"});
-            model.addRow(new Object[]{"45115-2","Rodrigo Sapo","-8000,00","19/06/2014"});
-            model.addRow(new Object[]{"25111-8","Nathan Oliveira","-5110,00","19/06/2014"});
+            model.addRow(new Object[]{"Saque","Caixa 22-Shopping DPedro","280,00","25/06/2014 22:55:12"});
+            model.addRow(new Object[]{"Depósito","Agencia 1818","1750,00","24/06/2014 12:44:12"});
+            model.addRow(new Object[]{"Saque","Caixa 22-Shopping DPedro","80,00","24/06/2014 22:55:12"});
+            model.addRow(new Object[]{"Transferencia","Carlos Freitas","900,00","23/06/2014 12:44:12"});
+            model.addRow(new Object[]{"Pagamento","Outback Steakhouse","120,00","23/06/2014 22:55:12"});
+            model.addRow(new Object[]{"Pagamento","Pão de Açucar","250,00","20/06/2014 22:55:12"});
+            model.addRow(new Object[]{"Transferencia","Carolina Mello","920,00","20/06/2014 22:55:12"});
+            model.addRow(new Object[]{"Saque","Caixa 32-Shopping Iguatemi","80,00","19/06/2014 12:44:12"});
+            model.addRow(new Object[]{"Depósito","Agencia 1818","5110,00","19/06/2014 12:44:12"});
             
         }else{
             JOptionPane.showMessageDialog(null,"Cliente não encontrado.");
@@ -182,15 +201,21 @@ public class Movimentacao extends javax.swing.JInternalFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btn_fecharActionPerformed
 
+    private void btn_infoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_infoActionPerformed
+        JOptionPane.showMessageDialog(null,"Carlos Freitas, Agencia 1819 Conta:99099-9");
+    }//GEN-LAST:event_btn_infoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton btn_criar;
     private javax.swing.JToggleButton btn_fechar;
+    private javax.swing.JToggleButton btn_info;
     private javax.swing.JFormattedTextField ftf_agencia;
     private javax.swing.JFormattedTextField ftf_conta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tb_movimentacao;
     private javax.swing.JTextField tf_nome;

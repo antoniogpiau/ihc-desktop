@@ -9,12 +9,12 @@ import javax.swing.JOptionPane;
  *
  * @author Guto
  */
-public class CriarConta extends javax.swing.JInternalFrame {
+public class ContaFisica extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form AbrirConta
      */
-    public CriarConta() {
+    public ContaFisica() {
         initComponents();
     }
 
@@ -49,7 +49,7 @@ public class CriarConta extends javax.swing.JInternalFrame {
 
         setClosable(true);
         setIconifiable(true);
-        setTitle("Criar Conta");
+        setTitle("Conta Física");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Nome:");

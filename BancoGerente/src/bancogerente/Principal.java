@@ -38,10 +38,13 @@ public class Principal extends javax.swing.JFrame {
         btn_investimentos2 = new javax.swing.JButton();
         btn_emprestimos2 = new javax.swing.JButton();
         btn_cartao = new javax.swing.JButton();
-        btn_abrirConta2 = new javax.swing.JButton();
+        btn_abrirFisica = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        btn_abrirConta = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        btn_abrirContaFisica = new javax.swing.JMenuItem();
+        btn_juridica = new javax.swing.JMenuItem();
+        btn_compartilhada = new javax.swing.JMenuItem();
         btn_consultarInfoCliente = new javax.swing.JMenuItem();
         btn_movimentacoes = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
@@ -156,15 +159,15 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        btn_abrirConta2.setBackground(new java.awt.Color(51, 153, 255));
-        btn_abrirConta2.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
-        btn_abrirConta2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_abrirConta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-money-bag-32.png"))); // NOI18N
-        btn_abrirConta2.setText("Abrir Conta");
-        btn_abrirConta2.setBorderPainted(false);
-        btn_abrirConta2.addActionListener(new java.awt.event.ActionListener() {
+        btn_abrirFisica.setBackground(new java.awt.Color(51, 153, 255));
+        btn_abrirFisica.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 10)); // NOI18N
+        btn_abrirFisica.setForeground(new java.awt.Color(255, 255, 255));
+        btn_abrirFisica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bancogerente/Images/white-money-bag-32.png"))); // NOI18N
+        btn_abrirFisica.setText("Solicitar Conta");
+        btn_abrirFisica.setBorderPainted(false);
+        btn_abrirFisica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_abrirConta2ActionPerformed(evt);
+                btn_abrirFisicaActionPerformed(evt);
             }
         });
 
@@ -173,7 +176,8 @@ public class Principal extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(btn_abrirFisica)
                 .addGap(18, 18, 18)
                 .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -188,7 +192,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(17, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_abrirConta2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_abrirFisica, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_cartao, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_emprestimos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_investimentos2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -213,7 +217,7 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(dp_principalLayout.createSequentialGroup()
                                 .addGap(273, 273, 273)
                                 .addComponent(jp_logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 125, Short.MAX_VALUE)))
+                        .addGap(0, 79, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         dp_principalLayout.setVerticalGroup(
@@ -232,14 +236,31 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu1.setText("Capital Bank");
 
-        btn_abrirConta.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        btn_abrirConta.setText("Abrir Conta");
-        btn_abrirConta.addActionListener(new java.awt.event.ActionListener() {
+        jMenu5.setText("Abertura de Conta");
+
+        btn_abrirContaFisica.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        btn_abrirContaFisica.setText("Pessoa Física");
+        btn_abrirContaFisica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_abrirContaActionPerformed(evt);
+                btn_abrirContaFisicaActionPerformed(evt);
             }
         });
-        jMenu1.add(btn_abrirConta);
+        jMenu5.add(btn_abrirContaFisica);
+
+        btn_juridica.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        btn_juridica.setText("Pessoa Jurídica");
+        btn_juridica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_juridicaActionPerformed(evt);
+            }
+        });
+        jMenu5.add(btn_juridica);
+
+        btn_compartilhada.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        btn_compartilhada.setText("Conta Compartilhada");
+        jMenu5.add(btn_compartilhada);
+
+        jMenu1.add(jMenu5);
 
         btn_consultarInfoCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK));
         btn_consultarInfoCliente.setText("Consultar Informações de Clientes");
@@ -387,11 +408,11 @@ public class Principal extends javax.swing.JFrame {
         lembretes.show();
     }//GEN-LAST:event_formWindowOpened
 
-    private void btn_abrirContaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_abrirContaActionPerformed
-        CriarConta cConta = new CriarConta();
-        this.dp_principal.add(cConta);
-        cConta.show();
-    }//GEN-LAST:event_btn_abrirContaActionPerformed
+    private void btn_abrirContaFisicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_abrirContaFisicaActionPerformed
+        ContaFisica cFisica = new ContaFisica();
+        this.dp_principal.add(cFisica);
+        cFisica.show();
+    }//GEN-LAST:event_btn_abrirContaFisicaActionPerformed
 
     private void btn_sobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sobreActionPerformed
         JOptionPane.showMessageDialog(null,"Desenvolvido pela AFRLS em parceria com o curso de Sistemas de Informação da PUC-Campinas.");
@@ -403,11 +424,11 @@ public class Principal extends javax.swing.JFrame {
        cInfo.show();
     }//GEN-LAST:event_btn_consultarInfoClienteActionPerformed
 
-    private void btn_abrirConta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_abrirConta2ActionPerformed
-        CriarConta cConta = new CriarConta();
+    private void btn_abrirFisicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_abrirFisicaActionPerformed
+        ContaFisica cConta = new ContaFisica();
         this.dp_principal.add(cConta);
         cConta.show();
-    }//GEN-LAST:event_btn_abrirConta2ActionPerformed
+    }//GEN-LAST:event_btn_abrirFisicaActionPerformed
 
     private void btn_emprestimos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_emprestimos2ActionPerformed
         Emprestimos cEmpres = new Emprestimos();
@@ -481,6 +502,12 @@ public class Principal extends javax.swing.JFrame {
         deve.show();
     }//GEN-LAST:event_btn_devedoresActionPerformed
 
+    private void btn_juridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_juridicaActionPerformed
+        ContaJuridica cJur = new ContaJuridica();
+        this.dp_principal.add(cJur);
+        cJur.show();
+    }//GEN-LAST:event_btn_juridicaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -518,10 +545,11 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem btn_abrirConta;
-    private javax.swing.JButton btn_abrirConta2;
+    private javax.swing.JMenuItem btn_abrirContaFisica;
+    private javax.swing.JButton btn_abrirFisica;
     private javax.swing.JMenuItem btn_cancelarCartao;
     private javax.swing.JButton btn_cartao;
+    private javax.swing.JMenuItem btn_compartilhada;
     private javax.swing.JMenuItem btn_consultarInfoCliente;
     private javax.swing.JMenuItem btn_devedores;
     private javax.swing.JMenuItem btn_emprestimos;
@@ -530,6 +558,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem btn_financiamento;
     private javax.swing.JMenuItem btn_gerarCartao;
     private javax.swing.JButton btn_investimentos2;
+    private javax.swing.JMenuItem btn_juridica;
     private javax.swing.JMenuItem btn_movimentacoes;
     private javax.swing.JMenuItem btn_sobre;
     private javax.swing.JButton btn_transacoes2;
@@ -541,6 +570,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
