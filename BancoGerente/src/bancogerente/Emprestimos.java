@@ -46,28 +46,28 @@ public class Emprestimos extends javax.swing.JInternalFrame {
 
         table_emprestimos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Antonio Souza", "1500", "21/07/2015", "(19)98855654", null},
-                {"Felipe Rubens", "8500", "21/07/2015", "(19)33255688", null},
-                {"Erick Berns", "1200", "21/07/2015", "(19)33255338", null},
-                {"Dexter Morgan", "10000", "21/07/2015", "(19)99255688", null},
-                {"Berry Allen", "5800", "21/07/2015", "(19)33255688", null},
-                {"Will Smith", "6520", "21/07/2015", "(19)33255688", null},
-                {"Oliver Queen", "9000", "21/07/2015", "(21)33255688", null},
-                {"Bruce Wayne", "152", "21/07/2015", "(19)33255688", null},
-                {"Tony Stark", "200", "21/07/2015", "(19)33255688", null},
-                {"Steve Rogers", "845", "21/07/2015", "(19)33255688", null},
-                {"Hannah Montana", "785", "22/07/2015", "(19)33255688", null},
-                {"Ashley Morgan", "1200", "22/07/2015", "(19)33255688", null},
-                {"Jennifer Anniston", "5880", "22/07/2015", "(19)33255688", null},
-                {"Monica Corners", "15000", "22/07/2015", "(19)33255688", null},
-                {"Henrique Cardoso", "2555", "22/07/2015", "(19)33255688", null}
+                {"Antonio Souza", "A", "1500", "21/07/2015", "(19)98855654", null},
+                {"Felipe Rubens", "B", "8500", "21/07/2015", "(19)33255688", null},
+                {"Erick Berns", "B", "1200", "21/07/2015", "(19)33255338", null},
+                {"Dexter Morgan", "D", "10000", "21/07/2015", "(19)99255688", null},
+                {"Berry Allen", "A", "5800", "21/07/2015", "(19)33255688", null},
+                {"Will Smith", "C", "6520", "21/07/2015", "(19)33255688", null},
+                {"Oliver Queen", "A", "9000", "21/07/2015", "(21)33255688", null},
+                {"Bruce Wayne", "A", "152", "21/07/2015", "(19)33255688", null},
+                {"Tony Stark", "A", "200", "21/07/2015", "(19)33255688", null},
+                {"Steve Rogers", "C", "845", "21/07/2015", "(19)33255688", null},
+                {"Hannah Montana", "B", "785", "22/07/2015", "(19)33255688", null},
+                {"Ashley Morgan", "C", "1200", "22/07/2015", "(19)33255688", null},
+                {"Jennifer Anniston", "A", "5880", "22/07/2015", "(19)33255688", null},
+                {"Monica Corners", "C", "15000", "22/07/2015", "(19)33255688", null},
+                {"Henrique Cardoso", "C", "2555", "22/07/2015", "(19)33255688", null}
             },
             new String [] {
-                "Nome", "Valor (R$)", "Data de Vencimento", "Telefone", "Aprovar"
+                "Nome", "Confiabilidade", "Valor (R$)", "Data de Vencimento", "Telefone", "Aprovar"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, true
+                false, true, false, false, false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -107,14 +107,14 @@ public class Emprestimos extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 708, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btn_fechar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_info4)
-                        .addGap(43, 43, 43)
-                        .addComponent(btn_enviar))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(27, Short.MAX_VALUE))
+                        .addGap(168, 168, 168)
+                        .addComponent(btn_enviar)))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -126,7 +126,7 @@ public class Emprestimos extends javax.swing.JInternalFrame {
                     .addComponent(btn_fechar)
                     .addComponent(btn_enviar)
                     .addComponent(btn_info4))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -148,7 +148,7 @@ public class Emprestimos extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_enviarActionPerformed
 
     private void btn_info4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_info4ActionPerformed
-        JOptionPane.showMessageDialog(null,"Antonio Souza, Agencia 1819 Conta:99099-9");
+        JOptionPane.showMessageDialog(null,"Antonio Souza, Agencia 1819 Conta:99099-9, Confiabilidade: Classe A.");
     }//GEN-LAST:event_btn_info4ActionPerformed
 
 
