@@ -238,7 +238,7 @@ public class Transacoes extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
-        if ((ftf_agencia.getText().toString().equals("1918")) && (ftf_conta.getText().toString().equals("19025-9"))) {
+        if ((ftf_agencia.getText().toString().equals("1111")) && (ftf_conta.getText().toString().equals("11111-1"))) {
             tf_nome.setText("Guilherme Bernardes do Campo");
         } else {
             JOptionPane.showMessageDialog(null, "Cliente não encontrado.");
@@ -246,7 +246,7 @@ public class Transacoes extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_buscarActionPerformed
 
     private void btn_buscar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscar2ActionPerformed
-        if ((ftf_agencia2.getText().toString().equals("2158")) && (ftf_conta2.getText().toString().equals("20225-4"))) {
+        if ((ftf_agencia2.getText().toString().equals("2222")) && (ftf_conta2.getText().toString().equals("22222-2"))) {
             tf_nome2.setText("Monica Santos Gomes");
         } else {
             JOptionPane.showMessageDialog(null, "Cliente não encontrado.");
@@ -256,7 +256,7 @@ public class Transacoes extends javax.swing.JInternalFrame {
     private void btn_tranferirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tranferirActionPerformed
         if((tf_nome.getText().equals("Guilherme Bernardes do Campo"))&&(tf_nome2.getText().equals("Monica Santos Gomes"))){
             if (!(tf_valor.getText().isEmpty())){
-                int n = JOptionPane.showConfirmDialog(null, "R$"+ tf_valor.getText().toString() + " serão transferidos da conta 19025-9 para 20225-4. Confirmar?");
+                int n = JOptionPane.showConfirmDialog(null, "R$"+ tf_valor.getText().toString() + ",00 serão transferidos da conta 11111-1 para 22222-2. Confirmar?");
                     if (n == JOptionPane.YES_OPTION){
                         JOptionPane.showMessageDialog(null, "Transferencia realizada.");
                         this.setVisible(false);

@@ -79,7 +79,7 @@ public class CancelarCartao extends javax.swing.JInternalFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Cartão a Cancelar");
 
-        cb_tipoCartao.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "   ", "Gold", "Travel" }));
+        cb_tipoCartao.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "     ", "MasterCard - Gold 5443254234", "CredCard - Travel 45454544" }));
 
         btn_cancelar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_cancelar.setText("Cancelar");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
   <Properties>
     <Property name="closable" type="boolean" value="true"/>
     <Property name="iconifiable" type="boolean" value="true"/>
@@ -161,9 +161,9 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="3">
-            <StringItem index="0" value="   "/>
-            <StringItem index="1" value="Gold"/>
-            <StringItem index="2" value="Travel"/>
+            <StringItem index="0" value="     "/>
+            <StringItem index="1" value="MasterCard - Gold 5443254234"/>
+            <StringItem index="2" value="CredCard - Travel 45454544"/>
           </StringArray>
         </Property>
       </Properties>

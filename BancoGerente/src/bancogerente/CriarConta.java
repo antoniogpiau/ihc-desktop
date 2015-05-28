@@ -43,6 +43,9 @@ public class CriarConta extends javax.swing.JInternalFrame {
         ftf_cep = new javax.swing.JFormattedTextField();
         jLabel7 = new javax.swing.JLabel();
         tf_numero = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        tf_contrato = new javax.swing.JTextField();
+        btn_buscar = new javax.swing.JToggleButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -83,6 +86,11 @@ public class CriarConta extends javax.swing.JInternalFrame {
             ex.printStackTrace();
         }
         ftf_nascimento.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        ftf_nascimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ftf_nascimentoActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("CPF:");
@@ -119,6 +127,21 @@ public class CriarConta extends javax.swing.JInternalFrame {
 
         tf_numero.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setText("Contrato Assinado:");
+
+        tf_contrato.setEditable(false);
+        tf_contrato.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        tf_contrato.setForeground(new java.awt.Color(0, 51, 255));
+
+        btn_buscar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_buscar.setText("Buscar");
+        btn_buscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_buscarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -127,20 +150,14 @@ public class CriarConta extends javax.swing.JInternalFrame {
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(ftf_nascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addComponent(jLabel5)
                             .addComponent(jLabel4)
                             .addComponent(jLabel6)
                             .addComponent(jLabel2)
-                            .addComponent(jLabel7)
-                            .addComponent(btn_fechar))
-                        .addGap(54, 54, 54)
+                            .addComponent(jLabel7))
+                        .addGap(65, 65, 65)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(tf_numero, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -153,8 +170,21 @@ public class CriarConta extends javax.swing.JInternalFrame {
                                         .addComponent(ftf_rg, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(ftf_cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(ftf_cep, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(tf_endereco)))
-                                .addContainerGap(33, Short.MAX_VALUE))))))
+                                        .addComponent(tf_endereco))
+                                    .addComponent(btn_buscar))
+                                .addContainerGap(51, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tf_contrato, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn_fechar)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(18, 18, 18)
+                                .addComponent(ftf_nascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,15 +213,20 @@ public class CriarConta extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(tf_numero, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(ftf_nascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(tf_contrato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_buscar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_criar)
                     .addComponent(btn_fechar))
-                .addGap(56, 56, 56))
+                .addGap(19, 19, 19))
         );
 
         pack();
@@ -202,11 +237,20 @@ public class CriarConta extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_fecharActionPerformed
 
     private void btn_criarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_criarActionPerformed
-        JOptionPane.showMessageDialog(null,"Conta criada.\nAgencia: 1618\nConta: 02585-9.");
+        JOptionPane.showMessageDialog(null,"Conta criada.\nAgencia: 1111\nConta: 11111-1.");
     }//GEN-LAST:event_btn_criarActionPerformed
+
+    private void ftf_nascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ftf_nascimentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ftf_nascimentoActionPerformed
+
+    private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
+        tf_contrato.setText("contrato1111Ricardo.doc");
+    }//GEN-LAST:event_btn_buscarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton btn_buscar;
     private javax.swing.JToggleButton btn_criar;
     private javax.swing.JToggleButton btn_fechar;
     private javax.swing.JFormattedTextField ftf_cep;
@@ -220,6 +264,8 @@ public class CriarConta extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField tf_contrato;
     private javax.swing.JTextField tf_endereco;
     private javax.swing.JTextField tf_nome;
     private javax.swing.JTextField tf_numero;

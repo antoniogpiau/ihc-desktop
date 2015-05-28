@@ -158,7 +158,7 @@ public class Movimentacao extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_criarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_criarActionPerformed
-        if ((ftf_agencia.getText().toString().equals("1918"))&&(ftf_conta.getText().toString().equals("19025-9"))){
+        if ((ftf_agencia.getText().toString().equals("1111"))&&(ftf_conta.getText().toString().equals("11111-1"))){
             tf_nome.setText("Guilherme Bernardes do Campo");
             
             DefaultTableModel model = (DefaultTableModel) tb_movimentacao.getModel();

@@ -43,6 +43,9 @@ public class GerarCartao extends javax.swing.JInternalFrame {
         jLabel11 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         ta_descricao = new javax.swing.JTextArea();
+        rb_master = new javax.swing.JRadioButton();
+        rb_cred = new javax.swing.JRadioButton();
+        rb_visa = new javax.swing.JRadioButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -118,6 +121,12 @@ public class GerarCartao extends javax.swing.JInternalFrame {
         ta_descricao.setRows(5);
         jScrollPane1.setViewportView(ta_descricao);
 
+        rb_master.setText("MasterCard");
+
+        rb_cred.setText("CrediCard");
+
+        rb_visa.setText("Visa");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -146,16 +155,25 @@ public class GerarCartao extends javax.swing.JInternalFrame {
                                         .addComponent(jLabel8)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(ftf_conta, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                                         .addComponent(btn_buscar))
                                     .addComponent(tf_nome)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(jLabel10)
                                 .addGap(18, 18, 18)
                                 .addComponent(cb_tipoCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_solicitar)))
-                        .addGap(18, 18, 18))))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(18, 18, 18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(rb_master)
+                        .addGap(18, 18, 18)
+                        .addComponent(rb_cred)
+                        .addGap(18, 18, 18)
+                        .addComponent(rb_visa)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_solicitar)
+                        .addGap(40, 40, 40))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,18 +189,23 @@ public class GerarCartao extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(tf_nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(cb_tipoCartao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_solicitar))
-                .addGap(28, 28, 28)
+                    .addComponent(cb_tipoCartao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_solicitar)
+                    .addComponent(rb_visa)
+                    .addComponent(rb_cred)
+                    .addComponent(rb_master))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(btn_fechar)
-                .addGap(25, 25, 25))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -253,8 +276,6 @@ public class GerarCartao extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton btn_buscar;
-    private javax.swing.JToggleButton btn_criar;
-    private javax.swing.JToggleButton btn_criar1;
     private javax.swing.JToggleButton btn_fechar;
     private javax.swing.JToggleButton btn_solicitar;
     private javax.swing.JComboBox cb_tipoCartao;
@@ -266,6 +287,9 @@ public class GerarCartao extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JRadioButton rb_cred;
+    private javax.swing.JRadioButton rb_master;
+    private javax.swing.JRadioButton rb_visa;
     private javax.swing.JTextArea ta_descricao;
     private javax.swing.JTextField tf_nome;
     // End of variables declaration//GEN-END:variables
