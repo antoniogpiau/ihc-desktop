@@ -258,6 +258,11 @@ public class Principal extends javax.swing.JFrame {
 
         btn_compartilhada.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         btn_compartilhada.setText("Conta Compartilhada");
+        btn_compartilhada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_compartilhadaActionPerformed(evt);
+            }
+        });
         jMenu5.add(btn_compartilhada);
 
         jMenu1.add(jMenu5);
@@ -507,6 +512,12 @@ public class Principal extends javax.swing.JFrame {
         this.dp_principal.add(cJur);
         cJur.show();
     }//GEN-LAST:event_btn_juridicaActionPerformed
+
+    private void btn_compartilhadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_compartilhadaActionPerformed
+        ContaCompartilhada cCom = new ContaCompartilhada();
+        this.dp_principal.add(cCom);
+        cCom.show();
+    }//GEN-LAST:event_btn_compartilhadaActionPerformed
 
     /**
      * @param args the command line arguments
