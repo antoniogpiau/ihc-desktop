@@ -54,7 +54,7 @@
                                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="ftf_conta" min="-2" pref="76" max="-2" attributes="0"/>
-                                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="btn_buscar" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="tf_nome" max="32767" attributes="0"/>
