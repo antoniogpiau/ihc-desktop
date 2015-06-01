@@ -56,6 +56,7 @@ public class ContaCompartilhada extends javax.swing.JInternalFrame {
         ftf_nascimento = new javax.swing.JFormattedTextField();
         jLabel3 = new javax.swing.JLabel();
 
+        setClosable(true);
         setTitle("Conta Compartilhada");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N

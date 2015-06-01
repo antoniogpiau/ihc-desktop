@@ -49,6 +49,7 @@ public class ContaJuridica extends javax.swing.JInternalFrame {
         tf_nome1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
 
+        setClosable(true);
         setTitle("Conta Jurídica");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
